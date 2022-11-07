@@ -13,7 +13,7 @@
 ActiveRecord::Schema.define(version: 2022_11_07_143824) do
 
   create_table "landlords", force: :cascade do |t|
-    t.string "full_name"
+    t.string "name"
     t.string "email"
     t.integer "phone_number"
     t.string "img_url"
@@ -32,7 +32,7 @@ ActiveRecord::Schema.define(version: 2022_11_07_143824) do
   end
 
   create_table "tenants", force: :cascade do |t|
-    t.string "full_name"
+    t.string "name"
     t.string "email"
     t.integer "phone_number"
     t.integer "property_id"
