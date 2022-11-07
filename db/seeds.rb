@@ -6,9 +6,6 @@ landlord3 = Landlord.create(full_name:"Richard")
 landlord4 = Landlord.create(full_name:"Oscar")
 landlord5 = Landlord.create(full_name:"Chris")
 
-
-
-
 property1 = Property.create(property_type:"Duplex",landlord_id: landlord1.id)
 property2 = Property.create(property_type:"Duplex",landlord_id: landlord2.id)
 property3 = Property.create(property_type:"Duplex",landlord_id: landlord3.id)
