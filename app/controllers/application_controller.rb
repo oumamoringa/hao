@@ -55,4 +55,27 @@ class ApplicationController < Sinatra::Base
       )
       tenant.to_json
   end
+
+  #patch requests(tenant)
+  patch '/tenant/:id' do
+    tenant = Tenant.find(params[:id])
+    tenant.update(
+        name: params[:name],
+        email: params[:email],
+        phone_number: params[:phone_number],
+        property_id: params[:property_id],
+    )
+end
+
+#delete requests (tenant,property)
+delete '/tenant/:id' do
+  tenant = Tenant.find(params[:id])
+  tenant.destroy
+end
+
+delete '/property/:id' do
+  property = Property.find(params[:id])
+  property.destroy
+end
+
 end
