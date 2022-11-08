@@ -10,10 +10,10 @@ class ApplicationController < Sinatra::Base
     Landlord.all.to_json
   end
 
-  # #get all properties
-  # get "/propeties" do
-  #   Property.all.to_json
-  # end
+  #get all properties
+  get "/properties" do
+    Property.all.to_json
+  end
 
   #get all tenants
   get "/tenants" do
