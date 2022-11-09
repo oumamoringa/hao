@@ -4,6 +4,7 @@ class CreateTenants < ActiveRecord::Migration[6.1]
       t.string :name
       t.string :email
       t.integer :phone_number
+      t.float :rent
       t.integer :property_id
       t.timestamps
     end

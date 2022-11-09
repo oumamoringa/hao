@@ -30,6 +30,7 @@ Property.all.each do |property|
       name: Faker::Name.name(),
       email: Faker::Internet.email(),
       phone_number: Faker::PhoneNumber.cell_phone,
+      rent: Faker::Commerce.price,
       property_id: property.id
 
     )
