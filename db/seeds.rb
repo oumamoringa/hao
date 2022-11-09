@@ -4,7 +4,7 @@ puts "🌱 Seeding spices..."
   10.times do
     Landlord.create(
       name: Faker::Name.name(),
-      phone_number: Faker::PhoneNumber.cell_phone,
+      phone_number: Faker::Number.number(digits: 10),
       email: Faker::Internet.email(),
       img_url: Faker::Avatar.image
     )
