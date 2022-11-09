@@ -33,3 +33,7 @@ The first version of the application must meet the following metrics:<br>
 6. React js front end
 7. Ruby back end
 8. SQLite database
+
+## Sample
+
+![alt text](./img/Screenshot%20from%202022-11-09%2019-28-29.png)
