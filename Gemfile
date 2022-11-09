@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem 'faker', '~> 1.6', '>= 1.6.6'
+gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'main'
 
 # A DSL for quickly creating web applications
 # https://github.com/sinatra/sinatra
