@@ -15,9 +15,9 @@ Landlord.all.each do |landlord|
   10.times do
     Property.create(
       location: Faker::Address.city,
-      property_type: "#{Faker::Number.between(from: 1, to: 4)} Bedrooms",
+      property_type: "#{Faker::Number.between(from: 2, to: 4)} Bedrooms",
       property_name: Faker::Name.name(),
-      property_size: rand(1..10),
+      property_size: "#{Faker::Number.between(from: 600, to: 2000)} sq ft",
       landlord_id: landlord.id
         
     )
