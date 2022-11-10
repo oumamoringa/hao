@@ -1,5 +1,7 @@
 ## HAO_APP
 
+![alt text](./img/Screenshot%20from%202022-11-09%2019-28-29.png)
+
 ## Introduction
 
 80% of city residents are tenants. What this necesarrily means is that majority of the housing
@@ -29,11 +31,9 @@ The first version of the application must meet the following metrics:<br>
 3. Landlords can read(access) property records
 4. Landlords can updateproperty records
 5. Landlords can delete(remove) property records
-   ## Technologies
+
+## Technologies
+
 6. React js front end
 7. Ruby back end
 8. SQLite database
-
-## Sample
-
-![alt text](./img/Screenshot%20from%202022-11-09%2019-28-29.png)
