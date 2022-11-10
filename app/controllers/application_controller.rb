@@ -47,7 +47,7 @@ class ApplicationController < Sinatra::Base
 
 #creating tenant
     post '/tenant' do
-     tenant = Property.create(
+     tenant = Tenant.create(
           name: params[:name],
           email: params[:email],
           phone_number: params[:phone_number],
