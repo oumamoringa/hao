@@ -34,6 +34,6 @@ The first version of the application must meet the following metrics:<br>
 
 ## Technologies
 
-6. React js front end
-7. Ruby back end
-8. SQLite database
+6. `React js front end`
+7. `Ruby back end`
+8. `SQLite database`
