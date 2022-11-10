@@ -26,7 +26,22 @@ class ApplicationController < Sinatra::Base
   get "/properties" do
     Property.all.to_json
   end
+########get active tenants
+get '/active tenants' do 
+  Tenant.all.count.to_json
+end
 
+get "/total properties" do
+  Property.all.count.to_json
+end
+
+get '/month rent'  do
+  sum = Tenant.sum(:rent)
+  res =(sum * 28) 
+  res.to_json
+end
+
+#####
   #get all tenants
   get "/tenants" do
     Tenant.all.to_json
@@ -41,19 +56,18 @@ class ApplicationController < Sinatra::Base
             property_name: params[:property_name],
             property_size: params[:property_size],
             landlord_id: params[:landlord_id],
-        )
-        property.to_json
+        ).to_json
+      
     end
 
 #creating tenant
     post '/tenant' do
-     tenant = Tenant.create(
-          name: params[:name],
-          email: params[:email],
-          phone_number: params[:phone_number],
-          property_id: params[:property_id],
-      )
-      tenant.to_json
+      tenant = Tenant.create(
+        name: params[:name],
+        email: params[:email],
+        phone_number: params[:phone_number],
+        rent: params[:rent],
+    ).to_json
   end
 
   #patch requests(tenant)
