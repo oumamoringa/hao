@@ -29,7 +29,7 @@ The first version of the application must meet the following metrics:<br>
 3. Landlords can read(access) property records
 4. Landlords can updateproperty records
 5. Landlords can delete(remove) property records
-   Technologies
+   ## Technologies
 6. React js front end
 7. Ruby back end
 8. SQLite database
